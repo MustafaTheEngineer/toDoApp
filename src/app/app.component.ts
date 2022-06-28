@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'toDoApp';
+  user = 'Osman';
+  items = [
+    {description: "Kahvaltı", action: "No"},
+    {description: "Sinema", action: "No"},
+    {description: "A", action: "No"},
+    {description: "B", action: "No"}
+  ];
+  count:number = this.items.length;
 }
