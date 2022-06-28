@@ -3,6 +3,11 @@
     <div class="col">
       <h3 class="bg-primary text-white p3">{{name}} To Do List</h3>
 
+      <div class="custom-control custom-checkbox my-3">
+        <input type="checkbox" [(ngModel)]="isDisplay" class="custom-control-input" name="" id="">
+        <label for="" class="custom-control-label" for="displayAll">Display All</label>
+      </div>
+
       <div class="input-group">
         <input type="text" #todoText class="form-control" />
         <div class="input-group-append">
